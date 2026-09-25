@@ -36,6 +36,9 @@ jobs:
           curl -o pin2.svg "https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=kruon7&repo=alisa-school&show_owner=true&bg_color=${{ env.BG }}&title_color=${{ env.TITLE }}&text_color=${{ env.TEXT }}&icon_color=${{ env.ICON }}&border_color=${{ env.BORDER }}&_=${{ github.run_id }}"
           sed -i "s/rx=\"[^\"]*\"/rx=\"${{ env.RX }}\"/g" stats.svg pin1.svg pin2.svg graph.svg
           sed -i "s/stroke=\"#[^\"]*\"/stroke=\"#${{ env.BORDER }}\"/g" stats.svg pin1.svg pin2.svg graph.svg
+          for f in stats.svg streak.svg graph.svg pin1.svg pin2.svg; do
+            echo "<!-- generated: $(date -u +%s) run: ${{ github.run_id }} -->" >> "$f"
+          done
 
       - name: Commit main
         run: |
