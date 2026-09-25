@@ -75,6 +75,16 @@
 ---
 
 <div align="center">
+<h2>🐍 Змейка по моим коммитам</h2>
+</div>
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/kruon7/kruon7/gh-pages/github-snake-dark.svg" alt="Змейка по коммитам" />
+</p>
+
+---
+
+<div align="center">
 <h2>🎯 Цели на 2026</h2>
 </div>
 

@@ -1,0 +1,30 @@
+name: Змейка
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Сгенерировать змейку
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake-dark.svg?color_snake=#8E2DE2&color_dots=#2D1745,#3B0764,#8E2DE2,#A78BFA,#C9B7E8
+            dist/github-snake-light.svg?color_snake=#8E2DE2&color_dots=#EDE9FE,#C4B5FD,#A78BFA,#8E2DE2,#6A0DAD
+
+      - name: Публикация в ветку gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          force_orphan: true
