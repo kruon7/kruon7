@@ -10,11 +10,11 @@ permissions:
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-  BG: ffffff
-  TITLE: 111111
-  TEXT: 4b5563
-  ICON: 111111
-  BORDER: e5e7eb
+  BG: 0d1117
+  TITLE: ffffff
+  TEXT: e5e7eb
+  ICON: ffffff
+  BORDER: 6b7280
   RADIUS: 20
   GRAPH_RADIUS: 16
   RX: 20
@@ -31,7 +31,7 @@ jobs:
         run: |
           curl -o stats.svg "https://github-readme-stats-eight-theta.vercel.app/api?username=kruon7&show_icons=true&bg_color=${{ env.BG }}&title_color=${{ env.TITLE }}&text_color=${{ env.TEXT }}&icon_color=${{ env.ICON }}&border_color=${{ env.BORDER }}&_=${{ github.run_id }}"
           curl -o streak.svg "https://github-readme-streak-stats.herokuapp.com/?user=kruon7&background=${{ env.BG }}&ring=${{ env.TITLE }}&fire=${{ env.TITLE }}&currStreakLabel=${{ env.TITLE }}&currStreakNum=${{ env.TITLE }}&sideNums=${{ env.TEXT }}&sideLabels=${{ env.TEXT }}&dates=${{ env.TEXT }}&border=${{ env.BORDER }}&stroke=${{ env.BORDER }}&border_radius=${{ env.RADIUS }}&_=${{ github.run_id }}"
-          curl -o graph.svg "https://github-readme-activity-graph-liard-six.vercel.app/graph?username=kruon7&bg_color=${{ env.BG }}&color=${{ env.TEXT }}&line=${{ env.TITLE }}&point=${{ env.TITLE }}&area_color=EDEAFE&area=true&hide_border=false&border_color=${{ env.BORDER }}&radius=${{ env.GRAPH_RADIUS }}&_=${{ github.run_id }}"
+          curl -o graph.svg "https://github-readme-activity-graph-liard-six.vercel.app/graph?username=kruon7&bg_color=${{ env.BG }}&color=${{ env.TEXT }}&line=${{ env.TITLE }}&point=${{ env.TITLE }}&area_color=1b1f23&area=true&hide_border=false&border_color=${{ env.BORDER }}&radius=${{ env.GRAPH_RADIUS }}&_=${{ github.run_id }}"
           curl -o pin1.svg "https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=kruon7&repo=typing-trainer&show_owner=true&bg_color=${{ env.BG }}&title_color=${{ env.TITLE }}&text_color=${{ env.TEXT }}&icon_color=${{ env.ICON }}&border_color=${{ env.BORDER }}&_=${{ github.run_id }}"
           curl -o pin2.svg "https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=kruon7&repo=alisa-school&show_owner=true&bg_color=${{ env.BG }}&title_color=${{ env.TITLE }}&text_color=${{ env.TEXT }}&icon_color=${{ env.ICON }}&border_color=${{ env.BORDER }}&_=${{ github.run_id }}"
           sed -i "s/rx=\"[^\"]*\"/rx=\"${{ env.RX }}\"/g" stats.svg pin1.svg pin2.svg graph.svg
