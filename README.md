@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/kruon7?tab=overview"><img src="https://capsule-render.vercel.app/api?type=waving&color=0:290024&color=1:6A0DAD&color=2:8E2DE2&color=3:3B0764&height=200&section=header&text=kruon7&fontSize=60&fontAlign=50&fontAlignY=40&animation=twinkling&fontColor=FFFFFF" width="100%" /></a>
+  <a href="https://github.com/kruon7?tab=overview"><img src="https://capsule-render.vercel.app/api?type=waving&color=0:ffffff&color=1:f5f3ff&color=2:e5e7eb&color=3:ffffff&height=200&section=header&text=kruon7&fontSize=60&fontAlign=50&fontAlignY=40&animation=twinkling&fontColor=111111" width="100%" /></a>
 </p>
 
 <p align="center">
@@ -23,7 +23,7 @@
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=kruon7&color=7c3aed&style=flat-square&label=Visitors" />
+  <img src="https://komarev.com/ghpvc/?username=kruon7&color=111111&style=flat-square&label=Visitors" />
 </p>
 
 <p align="center">
