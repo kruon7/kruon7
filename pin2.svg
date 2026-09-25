@@ -9,13 +9,13 @@
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
-            fill: #111111;
+            fill: #ffffff;
             animation: fadeInAnimation 0.8s ease-in-out forwards;
           }
           
-    .description { font: 400 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #4b5563 }
-    .gray { font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: #4b5563 }
-    .icon { fill: #111111 }
+    .description { font: 400 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #e5e7eb }
+    .gray { font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: #e5e7eb }
+    .icon { fill: #ffffff }
     .badge { font: 600 11px 'Segoe UI', Ubuntu, Sans-Serif; }
     .badge rect { opacity: 0.2 }
   
@@ -31,9 +31,9 @@
           y="0.5"
           rx="20"
           height="99%"
-          stroke="#e5e7eb"
+          stroke="#6b7280"
           width="399"
-          fill="#ffffff"
+          fill="#0d1117"
           stroke-opacity="1"
         />
 
@@ -99,4 +99,4 @@
   
         </g>
       </svg>
-    <!-- generated: 1790338952 run: 36134542827 -->
+    <!-- generated: 1790339207 run: 36134944146 -->
